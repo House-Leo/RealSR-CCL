@@ -1,6 +1,6 @@
 # RWSR-CCL 
 
-Criteria Comparative Learning for Real-scene Image Super-Resolution
+Criteria Comparative Learning for Real-scene Image Super-Resolution (Under review)
 
 Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
 
@@ -23,7 +23,7 @@ If you find this work useful for your research, please cite:
 @artical{shi2022realsr,
   title={Criteria Comparative Learning for Real-scene Image Super-Resolution},
   author={Shi, Yukai and Li, Hao and Zhang, Sen and Yang, Zhijing and Wang, Xiao},
-  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  journal={Under review},
   year={2022}
 }
 ```
