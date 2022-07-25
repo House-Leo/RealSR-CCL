@@ -9,7 +9,7 @@ Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
 (*Official PyTorch Implementation*)
 
 ## Update - July, 2022
-- Release testing code and pre-trained model for NTIRE 2020.
+- Release testing code.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ If you find this work useful for your research, please cite:
 ```
 
 ## Download Link
-- Pre-trained model [Google drive](https://drive.google.com/file/d/1busHlGDlf-YOY5tQSEy5uOhzsl9deJn-/view?usp=sharing)
+- Pre-trained model [Comming soon]()
 - [NTIRE 2020](https://competitions.codalab.org/competitions/22221)
 - [RealSR](https://github.com/csjcai/RealSR)
 - [CameraSR](https://github.com/ngchc/CameraSR)
