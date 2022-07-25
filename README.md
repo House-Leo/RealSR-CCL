@@ -1,6 +1,7 @@
 # RWSR-CCL 
 
-Criteria Comparative Learning for Real-scene Image Super-Resolution 
+Criteria Comparative Learning for Real-scene Image Super-Resolution
+
 Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
 
 *Guangdong University of Technology, The University of Sydney, Peng Cheng Laboratory*
