@@ -1,14 +1,13 @@
-# RWSR-CCL 
+# RealSR-CCL 
 
-Criteria Comparative Learning for Real-scene Image Super-Resolution (Under review)
+## Criteria Comparative Learning for Real-scene Image Super-Resolution (Under review) [[arxiv](https://arxiv.org/abs/2207.12767)]
 
-Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
+### Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
 
-*Guangdong University of Technology, The University of Sydney, Peng Cheng Laboratory*
-
-(*Official PyTorch Implementation*)
-
+### *Guangdong University of Technology, The University of Sydney, Peng Cheng Laboratory*
+---
 ## Update - July, 2022
+- Release pre-trained models.
 - Release testing code.
 
 ## Introduction
@@ -23,16 +22,17 @@ If you find this work useful for your research, please cite:
 @artical{shi2022realsr,
   title={Criteria Comparative Learning for Real-scene Image Super-Resolution},
   author={Shi, Yukai and Li, Hao and Zhang, Sen and Yang, Zhijing and Wang, Xiao},
-  journal={Under review},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
   year={2022}
 }
 ```
 
 ## Download Link
-- Pre-trained model [Comming soon]()
-- [NTIRE 2020](https://competitions.codalab.org/competitions/22221)
-- [RealSR](https://github.com/csjcai/RealSR)
-- [CameraSR](https://github.com/ngchc/CameraSR)
+- Pre-trained model [[Google Drive](https://drive.google.com/file/d/1Aunk1UoZAWq45pr6tZkjsTMcc4Qv7lbO/view?usp=sharing)] [[Github Release](https://github.com/House-Leo/RealSR-CCL/releases/download/Premodel/model.zip)]
+- Dataset
+  - [NTIRE 2020](https://competitions.codalab.org/competitions/22221) **(Validation set)**
+  - [RealSR](https://github.com/csjcai/RealSR) **(Test: Canon001-050)**
+  - [CameraSR](https://github.com/ngchc/CameraSR) **(Test: iPhoneX001L-020L)**
 
 ## How to use the code during test phase.
 

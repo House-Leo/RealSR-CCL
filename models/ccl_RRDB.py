@@ -101,7 +101,6 @@ class RRDBNet(nn.Module):
 
         self.branch1 = nn.Sequential(RB(in_nc, nf, 0.2), RB(nf, nf, 0.2), RB(nf, nf, 0.2))
         self.branch2 = nn.Sequential(RB(in_nc, nf, 0.2), RB(nf, nf, 0.2), RB(nf, nf, 0.2))
-        # self.sm = nn.Sequential(RB(in_nc, nf, 0.2), RB(nf, nf, 0.2), RB(nf, nf, 0.2), nn.LeakyReLU(negative_slope=0.2, inplace=True), nn.Softmax(dim=1))
         self.sm = nn.Sequential(RB(in_nc, nf, 0.2), RB(nf, nf, 0.2), RB(nf, nf, 0.2), nn.Softmax(dim=1))
         
         self.tail_conv1 = nn.Conv2d(nf, out_nc, 3, 1, 1, bias=True)
@@ -114,18 +113,18 @@ class RRDBNet(nn.Module):
         trunk = self.trunk_conv(self.RRDB_trunk(fea))
         fea = fea + trunk
 
-        fea = self.lrelu(self.upconv1(F.interpolate(fea, scale_factor=2, mode='nearest')))
+        fea = self.lrelu(self.upconv1(F.interpolate(fea, scale_factor=2, mode='nearest'))) 
+        # fea = self.lrelu(self.upconv1(fea)) # remove interpolation when test camerasr
         fea = self.lrelu(self.upconv2(F.interpolate(fea, scale_factor=2, mode='nearest')))
+        # fea = self.lrelu(self.upconv2(fea)) # remove interpolation when test camerasr
         mid_out = self.conv_last(self.lrelu(self.HRconv(fea)))
 
         mask = self.sm(mid_out)
 
         o1 = mask * self.branch1(mid_out)
-        # out1 = self.tail_conv1(self.lrelu(o1))
         out1 = self.tail_conv1(o1)
         
         o2 = (1-mask) * self.branch2(mid_out)
-        # out2 = self.tail_conv2(self.lrelu(o2))
         out2 = self.tail_conv2(o2)
         
         out = out1 + out2 

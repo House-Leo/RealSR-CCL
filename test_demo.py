@@ -29,8 +29,8 @@ def main():
     # --------------------------------
     # load model
     # --------------------------------
-    model_path = os.path.join('model_zoo', 'RealSR-CCL.pth')
-    model = RRDBNet(in_nc=3, out_nc=3, nf=64, nb=23)
+    model_path = os.path.join('model_zoo', 'NTIRE.pth')
+    model = RRDBNet(in_nc=3, out_nc=3, nf=64, nb=23) # remove interpolation when test CameraSR
     model.load_state_dict(torch.load(model_path), strict=True)
     model.eval()
     for k, v in model.named_parameters():
