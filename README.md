@@ -1,6 +1,6 @@
 # RealSR-CCL 
 
-## Criteria Comparative Learning for Real-scene Image Super-Resolution (TCSVT) [[arxiv](https://arxiv.org/abs/2207.12767)]
+## Criteria Comparative Learning for Real-scene Image Super-Resolution (TCSVT) [[arxiv](https://arxiv.org/abs/2207.12767)] [[IEEE](https://ieeexplore.ieee.org/document/9847265)]
 
 ### Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
 
