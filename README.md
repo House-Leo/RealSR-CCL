@@ -2,10 +2,12 @@
 
 ## Criteria Comparative Learning for Real-scene Image Super-Resolution (TCSVT) [[arxiv](https://arxiv.org/abs/2207.12767)] [[IEEE](https://ieeexplore.ieee.org/document/9847265)]
 
-### Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
+Yukai Shi, Hao Li, Sen Zhang, Zhijing Yang, Xiao Wang
 
-### *Guangdong University of Technology, The University of Sydney, Peng Cheng Laboratory*
+*Guangdong University of Technology, The University of Sydney, Peng Cheng Laboratory*
+
 ---
+
 ## Update - July, 2022
 - Release pre-trained models.
 - Release testing code.
